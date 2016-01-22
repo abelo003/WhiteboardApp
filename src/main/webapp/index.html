@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Collaborative Whiteboard</h1>
+        
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="150" height="150" style="border: 1px solid black;"></canvas>
+                </td>
+                <td>
+                    <form name="inputForm">
+                        <table>
+                        <tr>
+                            <th>Color</th>
+                            <td><input type="radio" name="color" value="#faf"></td>
+                            <td><input type="radio" name="color" value="#aaa"></td>
+                            <td><input type="radio" name="color" value="#101010"></td>
+                        </tr>
+                        <tr>
+                            <th>Shape</th>
+                            <td><input type="radio" name="shape" value="square"/>Square</td>
+                            <td><input type="radio" name="shape" value="circle"/>Circle</td>
+                        </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        
+        <script type="text/javascript" src="websocket.js"></script>
+        <script type="text/javascript" src="whiteboard.js"></script>
+    </body>
+</html>
